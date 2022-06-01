@@ -4,21 +4,18 @@ public class BaekJoon_10871 {
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
         int X = scan.nextInt();
-        int number;
         int[] A;
         int[] B;
         A = new int[N];
-        B = new int[N];
         Scanner sc = new Scanner(System.in);
-        for(int i = 1; i <= N+1; i++) {
+        for(int i = 0; i < N; i++) {
             A[i] = sc.nextInt();
-            if (i < X) {
-                B[i] = i;
+            if (A[i] < X) {
+                System.out.print(A[i] + " ");
             }
             else{
                 continue;
             }
         }
-        System.out.println(B);
    }
 }
